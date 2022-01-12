@@ -69,7 +69,7 @@ Title.BorderColor3 = Color3.new(1, 1, 1)
 Title.BorderSizePixel = 2
 Title.Size = UDim2.new(0, 419, 0, 23)
 Title.Font = Enum.Font.GothamBold
-Title.Text = "Lt2 Gui"
+Title.Text = "Sus Gui"
 Title.TextColor3 = Color3.new(0, 0, 0)
 Title.TextSize = 20
 
